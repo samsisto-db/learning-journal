@@ -111,7 +111,11 @@ Detailed weekly breakdown TBD at Week 6 retro.
 
 ## Open items / parking lot
 
-Dumping ground. Promote to a week or a note when ready. Prune ruthlessly during weekly retros.
+- System prompts
+- KV cache
+- Transformer architecture
+- Lakebase branching
+- Lakebase to save the state of an agent vs. using an .md file
 
 ### Databricks deep dive
 - DAB patterns: multi-env (dev/staging/prod), variables, includes, complex bundles shipping to customers
