@@ -7,6 +7,7 @@ The index. Update as you go. This is your homepage.
 - [Weekly retros](./weekly/)
 
 ## Notes by area
+(Link to the more detailed pages in the notes section)
 
 ### Python
 - _(empty — add as you create them)_
@@ -25,9 +26,3 @@ The index. Update as you go. This is your homepage.
 
 ### Databricks platform
 - 
-
-## Projects
-- _(each project lives in `/projects/{name}/` with its own README)_
-
-## Open items
-See the parking lot in [roadmap.md](./roadmap.md#open-items--parking-lot).

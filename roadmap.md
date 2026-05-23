@@ -109,13 +109,16 @@ Detailed weekly breakdown TBD at Week 6 retro.
 
 ---
 
-## Open items / parking lot
+
+## Open items
 
 - System prompts
 - KV cache
 - Transformer architecture
 - Lakebase branching
 - Lakebase to save the state of an agent vs. using an .md file
+- MCP servers 
+- Agentic set up and configurations
 
 ### Databricks deep dive
 - DAB patterns: multi-env (dev/staging/prod), variables, includes, complex bundles shipping to customers

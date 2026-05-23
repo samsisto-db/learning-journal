@@ -20,14 +20,15 @@ Get the floor under Python project hygiene + git fluency. Establish the daily co
 - **GitHub workflow:** creating PRs against yourself (yes, on your own repo — practice the workflow)
 
 ### Shipping deliverables
-- [ ] Repo folder structure cleaned up (no nested `mnt/...` path)
-- [ ] `notes/` and `projects/` exist and are committed (add `.gitkeep` or a real file)
-- [ ] **`journal-cli`** — a small Python CLI tool that helps manage this repo. Commands:
+- [x] Repo folder structure cleaned up (no nested `mnt/...` path)
+- [x] `notes/` and `projects/` exist and are committed (add `.gitkeep` or a real file)
+- [x] **`journal-cli`** — a small Python CLI tool that helps manage this repo. Commands:
   - `journal new-week N` → creates `weekly/week-0N.md` from template, fills in dates
   - `journal new-note "concept name"` → creates `notes/concept-name.md` from template
   - `journal hours` → counts hours logged across weekly retros
   - Lives in `projects/journal-cli/` with its own `README.md`, `pyproject.toml`, tests, and works after `uv tool install .`
 - [ ] At least 5 daily commits across the week
+- [ ] Read the Git intro chapters
 - [ ] Open one PR against your own `main` branch and merge it (practice the workflow)
 
 ### Notes to draft
