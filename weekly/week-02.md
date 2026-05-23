@@ -1,70 +1,33 @@
-# Week 2 — 2026-05-18 to 2026-05-24
+# Week 2 — DE core: Delta, Unity Catalog, Workflows, first DAB
 
-> Write the **Plan** section before the week starts. Fill in the **Retro** section at week's end.
+## Learning goals
+- Delta Lake: transaction log, ACID, time travel, MERGE, OPTIMIZE/VACUUM
+- Unity Catalog: three-level namespace, managed vs external, grants
+- Workflows: jobs, tasks, dependencies, triggers
+- Medallion: bronze/silver/gold
+- DABs end-to-end: databricks.yml, deploy, run
 
----
+## Ship
+- [ ] `projects/medallion-dab/` — DAB that does CSV → bronze → silver → gold Delta tables in UC, orchestrated as a Workflow job, deploys via `databricks bundle deploy --target dev`
 
-## Plan
+## Notes to draft
+- `notes/delta-lake.md`
+- `notes/unity-catalog.md`
+- `notes/medallion-architecture.md`
+- `notes/dabs.md`
 
-### Theme
-_One sentence — what's this week about?_
+## Resources
+- Delta Lake docs intro
+- Unity Catalog overview docs
+- Databricks Asset Bundles docs
+- github.com/databricks/bundle-examples
+- DE Associate prep path on Databricks Academy
 
-### Hours target
-~X hours
-
-### Learning goals
-- 
-- 
-
-### Shipping deliverables
-- [ ] 
-- [ ] 
-
-### Notes to draft
-- `concept-name.md`
-- 
-
-### Resources
-- 
-
-### Rough daily shape
-_Loose, not prescriptive. Adjust as the week unfolds._
-- **Mon–Fri (~1 hr each):** 
-- **Weekend (~5 hrs):** 
-
----
-
-## Retro
-
-### Hours logged
-~X hours
-
-### What shipped
-- 
-- 
-
-### What I learned (top 3)
-1. 
-2. 
-3. 
-
-### Self-ratings (1–5)
-| Area | Score | Δ from last week |
-|---|---|---|
-| Python | | |
-| Data Engineering | | |
-| ML / MLOps | | |
-| GenAI | | |
-| SWE foundations | | |
-
-### What didn't go well / friction
-- 
-
-### Next week's focus
-- 
-
-### Open items added this week
-- _(also add to `roadmap.md` parking lot)_
-
-### Decisions / pivots
-- _(if you changed course, log it here AND in `roadmap.md` Decision Log)_
+## Daily shape
+- Mon: Delta docs. Start `delta-lake.md`.
+- Tue: UC docs. Create catalog/schema/volume. Upload CSV. Start `unity-catalog.md`.
+- Wed: Read bundle-examples. Scaffold `medallion-dab/` with `databricks bundle init`. Deploy empty bundle.
+- Thu: Bronze + silver layers.
+- Fri: Gold layer + task dependencies. End-to-end run.
+- Sat: Write remaining notes. Polish README. Push.
+- Sun: Sketch week 3.

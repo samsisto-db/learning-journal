@@ -27,7 +27,7 @@ Get the floor under Python project hygiene + git fluency. Establish the daily co
   - `journal new-note "concept name"` → creates `notes/concept-name.md` from template
   - `journal hours` → counts hours logged across weekly retros
   - Lives in `projects/journal-cli/` with its own `README.md`, `pyproject.toml`, tests, and works after `uv tool install .`
-- [ ] At least 5 daily commits across the week
+- [x] At least 5 daily commits across the week
 - [ ] Read the Git intro chapters
 - [ ] Open one PR against your own `main` branch and merge it (practice the workflow)
 
