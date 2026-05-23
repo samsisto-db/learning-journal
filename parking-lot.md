@@ -1,7 +1,11 @@
+
+5/23/2026
+- Ran through a pretty involved DABs example; Let's pivot to some of the data engineering fundamentals and training there to nail some of that down. I think there is likely a good DABs example in that training that might help to visit
+
 5/23/2026
 - Read Git chapters intro
-- Figure out next steps - pretty set on python fundamentals, don't need to go deep there.
-	- Lets pivot into data engineering fundamentals, DABS and flesh out a plan for ML / AI / GenAI study
+- flesh out a plan for ML / AI / GenAI study
+
 
 
 

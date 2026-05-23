@@ -1,0 +1,9 @@
+resources:
+  jobs:
+    ingest_raw_events:
+      name: ingest_raw_events
+      tasks:
+        - task_key: ingest
+          spark_python_task:
+            python_file: ../projects/dabs-testing/src/hello.py
+          existing_cluster_id: 0523-195047-pw95vn5s
