@@ -1,0 +1,28 @@
+https://neon.com/docs/introduction/architecture-overview
+
+- Instead of running Postgres as a single stateful system tied to a VM and its filesystem, Neon's Lakebase splits the system into two independent layers
+	- Communicate over the network, with a stream of write-ahead log records connecting them
+- **Compute layer is ephemeral** and runs Postgres
+	- Executes queries and transactions using RAM; parses SQL, plans queries, executes transactions
+	- Exists to execute work, not to preserve data
+	- Has access to RAM and Local NVMe to avoid round-trips and keep most reads at memory level
+		- Always prefers local access; only when a page is missing does the compute node request it from the pageserver
+		- Never reads directly from object storage
+- **Durable storage layer** optimized for correctness, history and scale
+	- Replicates the WAL via quorum
+	- Object storage provides durability and scale but never sits in front of query execution
+	- Exists independently of compute
+	- Instead of traditional filesystem, storage layer has three distinct components:
+		- **Safekeepers**: define correctness by replicating WAL
+			- Transaction is considered commits once a quorum of safekeepers has acknowledges the WAL records via Paxos protocol
+				- Correctness is enforced through replication and consensus
+				- Latency depends on network RTT
+				- No single machine defines the durable state of the database
+		- **pageserver**: Turns WAL into queryable data pages
+			- Translation layer between the logical history of the database and the physical representation needed to run queries
+		- **Object storage**: holds long-term, immutable history
+			- Stores materialized page versions
+			- Never accessed by the compute layer
+			- Only backs the pageserver
+			- 
+	- 
