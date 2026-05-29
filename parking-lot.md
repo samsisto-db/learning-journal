@@ -4,7 +4,7 @@
 5/27/2026
 - Baseten: https://www.baseten.co/products/dedicated-inference/
 	- SA job posting: https://jobs.ashbyhq.com/baseten/c64515f9-a8f7-4633-9340-17cda56b1ef0?utm_source=worNde4l4L
-- 
+- ClickHouse
 
 5/26/2026
 - Reviewed and calcified Neon's Lakebase architecture
@@ -18,7 +18,13 @@
 - flesh out a plan for ML / AI / GenAI study
 
 
-
+## Certs
+- Databricks data engineering
+- Anthropic Building with the Claude API: https://anthropic.skilljar.com/claude-with-the-anthropic-api
+	- ~10 hours
+	- Interpret how the messaging example here aligns with the chatbot/lakebase set up that you deployed previously
+- NVIDIA Generative AI Associate: https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/
+	- ~32 hours
 
 
 ## Running list of open items to dig into
@@ -31,6 +37,8 @@
 - KV cache - transformer architecture is a "next token predictor". To do that prediction, you need to understand how each token relates to all the tokens around it (Q, K, V). Instead of recomputing that key and value for each token, it's stored in the GPU's memory as the model computes the next tokens.
 - Transformer architecture
 - Prompt caching
+
+- Review chatbot and lakebase integration that you deployed in SLED azure env.
 
 - Lakebase branching
 - Lakebase to save the state of an agent vs. using an .md file
