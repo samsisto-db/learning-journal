@@ -25,6 +25,9 @@
 	- Interpret how the messaging example here aligns with the chatbot/lakebase set up that you deployed previously
 - NVIDIA Generative AI Associate: https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/
 	- ~32 hours
+	- Look at study guide in the PDF with recommended readings
+	- Skillcertpro practice test
+	- Timeline for cert completion
 
 
 ## Running list of open items to dig into

@@ -187,6 +187,13 @@ A seed list per cell. Add to these as you encounter new concepts. Don't try to m
 - Multi-agent orchestration
 - Routing across models (cost / capability tiers)
 - Context management, prompt caching
+- Agents - In the case of generative AI, agents are a class of intelligent agents that can pursue goals, use tools and take actions with varying degrees of autonomy. 
+	- Anthropic - software that can interact with its environment and perform actions to complete a defined goal.
+	- Agentic loop: gather context -> take action -> verify results
+	- Context window: the amount of space an agent can hold in its memory. Once context window fills up, then it is compacted down to free up space
+	- [CLAUDE.md](http://claude.md) file - gives Claude Code persistent memory about your project
+	- MCP servers add tool definitions to your context window, even when you’re not using them. If you have lots enabled, that can eat into your available context
+	- Hooks give you a deterministic control over CC’s behavior -> if you need something to happen every time without fail
 - System prompt - the instruction block that a lab or a developer injects ahead of user's messages to set the models persona, capabilities, tools, formatting rules and safety boundaries. Is now the top of the *instruction hierarchy*
 	- System prompt is the fast patch layer - does not require re-training
 	- An agent like Claude Code or Codex is the model _plus_ a carefully engineered system prompt, _plus_ a set of tool definitions, _plus_ the harness that runs the tool-use loop.

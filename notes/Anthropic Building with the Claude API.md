@@ -18,3 +18,13 @@ Anthropic API and Claude are stateless -> do not store any messages
 To have a conversation, need to have:
 - manually maintain a list of those messages
 - provide that list of messages on each follow up
+
+Prompt engineering - how to write better prompts
+Techniques:
+- Be clear, direct and specific about what you are looking for
+- Guidelines:
+	- List qualities that the output should have
+	- Provide the steps the model should follow
+
+Prompt evaluation - how to measure the effectiveness of those prompts
+- Run your prompt through an evaluation pipeline, you get objective metrics about its performance
